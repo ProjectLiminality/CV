@@ -1,0 +1,214 @@
+:root {
+    --red: #FF644E;
+    --blue: #00A2FF;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TypoPRO TeX Gyre Termes', serif;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-info {
+    margin: 1rem 0;
+}
+
+.contact-info a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--red);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 2rem;
+}
+
+.experience-item p {
+    white-space: pre-line;
+    padding-left: 1rem;
+}
+
+.experience-item h3, .education-item h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.experience-item .date, .education-item .date {
+    color: var(--blue);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.skill-category {
+    background: rgba(0, 162, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+}
+
+.skill-category h3 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.skill-category li:before {
+    content: "•";
+    color: var(--blue);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.language-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.language-name {
+    min-width: 120px;
+}
+
+.dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.dot.filled {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-info span {
+        display: none;
+    }
+}

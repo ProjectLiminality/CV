@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rug - CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+        }
+        .experience-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .experience-content {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #00A2FF;
+            border-radius: 4px;
+        }
+        .testimonial {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #FF6B6B;
+            border-radius: 4px;
+            font-style: italic;
+            text-align: center;
+            margin: 0;
+            white-space: pre-line;
+            display: flex;
+            flex-direction: column;
+        }
+        .testimonial-author {
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-weight: bold;
+            text-align: right;
+        }
+        .testimonial-title {
+            font-style: normal;
+            font-size: 0.9em;
+            color: #999;
+            text-align: right;
+        }
+        .section-separator {
+            width: 110%;
+            height: auto;
+            margin: 2rem 0;
+            display: block;
+            max-width: 2600px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@typopro/web-tex-gyre-termes@3.7.5/TypoPRO-TeX-Gyre-Termes.css">
+</head>
+<body>
+    <div class="container">
+        <img src="media/DavidCloseUpCropped.png" alt="David Rug" class="profile-image">
+        <header>
+            <h1>David Rug</h1>
+            <div class="contact-info">
+                <p><img src="media/contact/Mail.svg" alt="Email"><a href="mailto:david.rug98@icloud.com">david.rug98@icloud.com</a></p>
+                <p><img src="media/contact/Phone.svg" alt="Phone"><a href="tel:+4915738080234">+49-157-3808-0234</a></p>
+                <p><img src="media/contact/LinkedIn.svg" alt="LinkedIn"><a href="https://linkedin.com/in/david-rug-748946192" target="_blank">LinkedIn</a></p>
+                <p><img src="media/contact/YouTube.svg" alt="YouTube"><a href="https://www.youtube.com/@projectliminality2932" target="_blank">YouTube</a></p>
+                <p><img src="media/contact/GitHub.svg" alt="GitHub"><a href="https://github.com/ProjectLiminality" target="_blank">GitHub</a></p>
+            </div>
+            <p style="margin-top: 20px;"><img src="media/contact/House.svg" alt="Address" style="height: 30px; vertical-align: middle; margin-right: 15px;">Rua Senhor do Bonfim 341, 4730-190 Goães, VVD, Portugal</p>
+        </header>
+
+        <img src="media/elements/Seperator.png" alt="Separator" class="section-separator">
+        <section id="summary">
+            <h2>Summary</h2>
+            <p style="border: 1px solid var(--white); border-radius: 4px; padding: 1rem;">I combine analytical thinking and visual storytelling to make complex concepts intuitive through animation. With a background in physics and expertise in systems thinking, I develop custom tools and frameworks for knowledge transfer. Through Project Liminality and consulting work, I help organizations in web3 and systems change communicate effectively. My interdisciplinary approach - merging mathematics, programming, and 3D animation - uniquely positions me to tackle complex challenges and bridge understanding across domains.</p>
+        </section>
+
+        <img src="media/elements/Seperator.png" alt="Separator" class="section-separator">
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-items"></div>
+        </section>
+
+        <img src="media/elements/Seperator.png" alt="Separator" class="section-separator">
+        <div class="split-container" style="display: flex; gap: 2rem;">
+            <div class="left-column" style="flex: 1;">
+                <section id="education">
+                    <h2>Education</h2>
+                    <div class="education-items" style="border: 1px solid var(--red); border-radius: 4px; padding: 1rem;"></div>
+                </section>
+                
+                <section id="languages" style="margin-top: 2rem;">
+                    <h2>Languages</h2>
+                    <div class="language-items" style="border: 1px solid var(--red); border-radius: 4px; padding: 1rem;">
+                    <div class="language-items">
+                        <div class="language-item">
+                            <span class="language-name">German</span>
+                            <div class="dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <div class="dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">French</span>
+                            <div class="dots">
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Portuguese</span>
+                            <div class="dots">
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="right-column" style="flex: 1;">
+                <section id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid"></div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
